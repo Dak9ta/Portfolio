@@ -17,6 +17,7 @@ body {
 
 .paper {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     display: flex;
@@ -36,6 +37,11 @@ body {
     transform: scaleX(-1);
 }
 
+.paper img:nth-child(3) {
+    margin-top: -40px;
+    transform: scaleX(1);
+}
+
 
 nav {
     display: flex;
@@ -49,8 +55,7 @@ nav {
 }
 
 nav img {
-    width: 55px;
-    height: 55px;
+    height: 5.933svh;
     flex-shrink: 0;
 }
 
@@ -67,10 +72,9 @@ nav ul li a {
     font-family: var(--title);
     color: var(--primary-light);
     text-align: right;
-    font-size: 30px;
+    font-size: 3.236svh;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.0625rem;
     align-self: stretch;
 }
@@ -88,30 +92,29 @@ nav ul li a {
 
 .socials a {
     display: flex;
-    padding: 0.625rem;
+    padding: 1.079svh;
     align-self: center;
 }
 
 .socials a img {
-    width: 32px;
-    height: 32px;
-    mix-blend-mode: difference;
+    height: 3.452svh;
+    mix-blend-mode: exclusion;
 }
 
 #hero {
     display: flex;
+    z-index: 0;
     padding: 29.342svh 280px 37.4326svh 210px;
     flex-direction: column;
     align-items: center;
     align-self: stretch;
-    mix-blend-mode: difference;
 }
 
 #hero p {
     color: var(--primary-light);
     text-align: center;
     font-family: var(--title);
-    font-size: 40px;
+    font-size: 4.315svh;
     font-weight: 400;
 }
 
@@ -125,7 +128,7 @@ nav ul li a {
 #hero .title h1 {
     color: var(--primary-light);
     font-family: var(--header);
-    font-size: 150px;
+    font-size: 16.181svh;
     font-style: normal;
     font-weight: 400;
 }
@@ -139,13 +142,21 @@ nav ul li a {
 }
 
 .main-sections {
-    mix-blend-mode: difference;
     display: flex;
-    padding: 100px 280px 100px 210px;
+    z-index: 0;
+    padding: 10.787svh 280px 10.787svh 210px;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
     align-self: stretch;
+}
+
+.main-sections h2 {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 6.472svh;
+    font-style: normal;
+    font-weight: 400;
 }
 
 #about {
@@ -154,7 +165,7 @@ nav ul li a {
 
 #about .content {
     display: flex;
-    padding-bottom: 2rem;
+    padding-bottom: 2.589svh;
     flex-direction: column;
     align-items: flex-end;
     align-self: stretch;
@@ -168,20 +179,11 @@ nav ul li a {
     align-self: stretch;
 }
 
-.content .about h2 {
-    color: #D9D5CD;
-    font-family: var(--title);
-    font-size: 3.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
 .content .about p {
     align-self: stretch;
-    color: #D9D5CD;
+    color: var(--primary-light);
     font-family: var(--content);
-    font-size: 1.9375rem;
+    font-size: 3.236svh;
     font-style: normal;
     font-weight: 274;
     letter-spacing: 0.03875rem;
@@ -208,7 +210,6 @@ nav ul li a {
     flex-shrink: 0;
 }
 
-
 .photo .polaroid, .photo .texture, .photo .img {
     position: absolute;
     rotate: -17.64deg;
@@ -233,4 +234,167 @@ nav ul li a {
 
 .photo .texture, .photo1 .texture {
     mix-blend-mode: color-burn;
+}
+
+#abilities .abilities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.abilities .ability {
+    display: flex;
+    padding: 6.041svh 3.25rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid var(--primary-light);
+}
+
+.ability h3 {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 5.394svh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ability p {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 3.236svh;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+.abilities .ability:hover {
+    background-color: var(--primary-light);
+    mix-blend-mode: exclusion;
+}
+
+.ability * {
+    mix-blend-mode: exclusion;
+}
+
+#works .works {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.394svh;
+    align-self: stretch;
+}
+
+.works .work {
+    display: flex;
+    padding: 6.041svh 3.25rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid var(--primary-light);
+}
+
+.works .work:hover {
+    background-color: var(--primary-light);
+    mix-blend-mode: exclusion;
+}
+
+.work * {
+    mix-blend-mode: exclusion;
+}
+
+.work h3 {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 5.394svh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.work .tags {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 2.03125svw;
+}
+
+.work .tags div {
+    display: flex;
+    padding: 1.079svh 1.5625rem;
+    align-items: flex-start;
+    border-radius: 3.125rem;
+    border: 1px solid var(--primary-light);
+    color: var(--primary-light);
+    font-family: var(--content);
+    font-size: 2.157svh;
+    font-style: normal;
+    font-weight: 110;
+}
+
+#reviews .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.reviews .review {
+    display: flex;
+    padding: 6.041svh 3.25rem;
+    justify-content: space-between;
+    border: 1px solid var(--primary-light);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.8125rem;
+    align-self: stretch;
+}
+
+.reviews .review:hover {
+    background-color: var(--primary-light);
+    mix-blend-mode: exclusion;
+}
+
+.review * {
+    mix-blend-mode: exclusion;
+}
+
+.review .content {
+    align-self: stretch;
+    color: var(--primary-light);
+    font-family: var(--content);
+    font-size: 6.472svh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.review .reviewer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.079svh;
+}
+
+.reviewer .name {
+    color: var(--primary-light);
+    font-family: var(--content);
+    font-size: 2.697svh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.reviewer .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reviewer p {
+    color: var(--grey);
+    font-family: var(--content);
+    font-size: 2.697svh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
 }
