@@ -1,0 +1,236 @@
+@import url(/assets/css/root.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    gap: 0;
+}
+
+body {
+    display: flex;
+    min-width: 79.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--background, #D9D9D9);
+}
+
+.paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--background, #D9D9D9);
+    mix-blend-mode: exclusion;
+}
+
+.paper img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.paper img:nth-child(2) {
+    rotate: 180deg;
+    transform: scaleX(-1);
+}
+
+
+nav {
+    display: flex;
+    width: calc(100svw - 140px);
+    top: 0;
+    left: 0;
+    margin: 70px 70px 0 70px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+}
+
+nav img {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.625rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: var(--title);
+    color: var(--primary-light);
+    text-align: right;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0625rem;
+    align-self: stretch;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.25rem;
+    position: fixed;
+    left: 70px;
+    bottom: 60px;
+}
+
+.socials a {
+    display: flex;
+    padding: 0.625rem;
+    align-self: center;
+}
+
+.socials a img {
+    width: 32px;
+    height: 32px;
+    mix-blend-mode: difference;
+}
+
+#hero {
+    display: flex;
+    padding: 29.342svh 280px 37.4326svh 210px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    mix-blend-mode: difference;
+}
+
+#hero p {
+    color: var(--primary-light);
+    text-align: center;
+    font-family: var(--title);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#hero .title {
+    display: flex;
+    flex-direction: column;
+    margin-top: -21px;
+    align-items: flex-start;
+}
+
+#hero .title h1 {
+    color: var(--primary-light);
+    font-family: var(--header);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#hero .title .mail-abilities {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.main-sections {
+    mix-blend-mode: difference;
+    display: flex;
+    padding: 100px 280px 100px 210px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+#about {
+    margin-bottom: 35.1672svh;
+}
+
+#about .content {
+    display: flex;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+#about .content .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    align-self: stretch;
+}
+
+.content .about h2 {
+    color: #D9D5CD;
+    font-family: var(--title);
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content .about p {
+    align-self: stretch;
+    color: #D9D5CD;
+    font-family: var(--content);
+    font-size: 1.9375rem;
+    font-style: normal;
+    font-weight: 274;
+    letter-spacing: 0.03875rem;
+}
+
+#about .photos {
+    display: flex;
+    padding-left: 11.875rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.photo1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 240px;
+    flex-shrink: 0;
+}
+
+
+.photo .polaroid, .photo .texture, .photo .img {
+    position: absolute;
+    rotate: -17.64deg;
+}
+
+.photo1 .polaroid, .photo1 .texture, .photo1 .img {
+    position: absolute;
+    rotate: 15deg;
+}
+
+.photo .texture, .photo .img {
+    width: 15rem;
+    height: 15rem;
+    margin: 1.2rem 0 0 0.47rem;
+}
+
+.photo1 .texture, .photo1 .img {
+    width: 15rem;
+    height: 15rem;
+    margin: 1.2rem 0 0 1.3rem;
+}
+
+.photo .texture, .photo1 .texture {
+    mix-blend-mode: color-burn;
+}
