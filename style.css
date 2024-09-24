@@ -79,7 +79,7 @@ nav ul li a {
     align-self: stretch;
 }
 
-.socials {
+nav .socials {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -90,13 +90,13 @@ nav ul li a {
     bottom: 60px;
 }
 
-.socials a {
+nav .socials a {
     display: flex;
     padding: 1.079svh;
     align-self: center;
 }
 
-.socials a img {
+nav .socials a img {
     height: 3.452svh;
     mix-blend-mode: exclusion;
 }
@@ -104,7 +104,7 @@ nav ul li a {
 #hero {
     display: flex;
     z-index: 0;
-    padding: 29.342svh 280px 37.4326svh 210px;
+    padding: 29.342svh 14.583svw 37.4326svh 10.9375svw;
     flex-direction: column;
     align-items: center;
     align-self: stretch;
@@ -399,3 +399,91 @@ nav ul li a {
     line-height: 180%;
 }
 
+#contact {
+    display: flex;
+    padding: 7.551svh 0rem 12.945svh 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact .content h4 {
+    position: absolute;
+    left: 11.97916svw;
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 5.394svh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content .main {
+    display: flex;
+    padding: 6.688svh 0rem 0rem 1.5625svw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main a {
+    color: var(--primary-light);
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--title);
+    font-size: 21.575svh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5.394svh;
+    align-self: stretch;
+}
+
+.main .bottom .divisor {
+    display: flex;
+    gap: 4.583svw;
+    align-items: center;
+    align-self: stretch;
+}
+
+.bottom .divisor hr {
+    flex: 1 0 0;
+    border-radius: 2svh;
+    border: 0.129svh solid var(--primary-light);
+}
+
+.bottom .divisor h3 {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 4.315svh;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main .bottom .contact-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.main .bottom .contact-socials a {
+    color: var(--primary-light);
+    font-family: var(--title);
+    font-size: 4.315svh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
